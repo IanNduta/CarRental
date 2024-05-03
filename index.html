@@ -51,18 +51,71 @@
 
     <main>
         <div class="container"> </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="col">
-                <h1>Hello, world!</h1>
+                <div id="formstuff">
+                    <h1 class="mb-3">ACME Car Rental</h1>
+                    <div class="mt-1">
+                        <label for="pickUpInput" class="form-label">Pickup date</label>
+                        <input id="pickUpInput"  class="form-label" type="text" value="">
+                    </div>
+
+                    <div class="mt-1">
+                        <label for="daysInput" class="form-label">Number of Days</label>
+                        <input id="daysInput"  class="form-label" type="text" value="">
+                    </div>
+
+                    <h5 class="mb-3">Options</h5>
+                    <div class="mt-1">
+
+                        <input id="tollTagInput"  class="form-check-input" type="checkbox" name="Options" value="Electronic Toll Tag"> 
+                        <label for="tollTagInput" class="form-check-label">Electronic Toll Tag</label>
+                    </div>
+
+                    <div class="mt-1">
+                        <input id="GPSInput"  class="form-check-input" type="checkbox" name="Options" value="GPSInput">
+                        <label for="GPSInput" class="form-check-label">GPSInput</label>
+                    </div>
+
+                    <div class="mt-1">
+                        <input id="RoadsideInput"  class="form-check-input" type="checkbox" name="Options" value="RoadsideInput">
+                        <label for="RoadsideInput" class="form-check-label">RoadsideInput</label>
+                    </div>
+
+                    <h5 class="mb-3 mt-2">Under 25</h5>
+
+                    <div id="fix" class="mt-1">
+                        <label for="yesInput" class="form-check-label">Yes</label>
+                        <input id="yesInput"  class="form-check-input" type="radio" name="age" value="Ys">
+                    </div>
+
+                    <div id="fix" class="mt-1">
+                        <label for="noInput" class="form-check-label">No</label>
+                        <input id="noInput"  class="form-check-input" type="radio" name="age" value="No">
+                    </div>
+
+                    <div class="mt-3">
+                        <label for="totalBtn" class="form-label">Caculate Price</label>
+                        <input id="totalBtn"  class="form-label" type="button" value="Estimate Total Cost">
+                    </div>
+
+                    <div>
+                        <p id="carRentalOutput"></p>
+                        <p id="optionsOutput"></p>
+                        <p id="surchargeOutput"></p>
+                        <p id="totalDueOuput"></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="container"> </div>
         <div class="row">
             <div class="col">
-                <h1>Hello, world!</h1>
+
             </div>
+
         </div>
+
     </main>
 
 
@@ -74,6 +127,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="scripts/site.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
