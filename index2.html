@@ -55,14 +55,14 @@
                 <div class="col">
                     <h1 class="mb-3">ACME Car Rental</h1>
                     <label for="inputPickUpDate" class="form-label">Pickup date</label>
-                    <input id="inputPickUpDate"  class="form-label" type="text" value="">
+                    <input id="inputPickUpDate"  class="form-label" type="date">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col">
-                    <label for="inputNumOfdays" class="form-label">Number of Days</label>
-                    <input id="inputNumOfdays"  class="form-label" type="text" value="">
+                    <label for="inputNumOfDays" class="form-label">Number of Days</label>
+                    <input id="inputNumOfDays"  class="form-label" type="text" value="1">
                 </div>
             </div>
 
@@ -71,16 +71,16 @@
                     <h2>Options</h2>
                     <div>
                         <input id="inputOptElecTollTagCheckbox" class="form-check-input" type="checkbox" name="Options" value="Electronic Toll Tag">
-                        <label for="inputOptElecTollTagCheckbox" class="form-check-label">Electronic Toll Tag</label>
+                        <label for="inputOptElecTollTagCheckbox" class="form-check-label">Electronic Toll Tag ($3.95/day)</label>
                     </div>
                     <div class="mt-1">
                         <input id="inputOptGPSCheckBox"  class="form-check-input" type="checkbox" name="Options" value="GPSInput">
-                        <label for="inputOptGPSCheckBox" class="form-check-label">GPSInput</label>
+                        <label for="inputOptGPSCheckBox" class="form-check-label">GPSInput ($2.95/day)</label>
                     </div>
 
                     <div class="mt-1">
                         <input id="inPutOptRoadisdeAsstCheckbox"  class="form-check-input" type="checkbox" name="Options" value="RoadsideInput">
-                        <label for="inPutOptRoadisdeAsstCheckbox" class="form-check-label">RoadsideInput</label>
+                        <label for="inPutOptRoadisdeAsstCheckbox" class="form-check-label">RoadsideInput ($2.95/day)</label>
                     </div>
                 </div>
             </div>
@@ -89,10 +89,11 @@
                 <div class="col">
                     <h2>Under 25</h2>
                     <div class="mt-1">
-                        <label for="inputUnder25radio" class="form-check-label">Yes</label>
-                        <input id="inputUnder25radio"  class="form-check-input" type="radio" name="under25" value="Yes" checked>
-                        <label for="inputUnder25radio" class="form-check-label">No</label>
-                        <input id="inputUnder25radio"  class="form-check-input" type="radio" name="under25" value="No">
+                        <label for="inputUnder25Yesradio" class="form-check-label">Yes</label>
+                        <input id="inputUnder25Yesradio"  class="form-check-input" type="radio" name="under25" value="Yes" checked>
+
+                        <label for="inputUnder25Noradio" class="form-check-label">No</label>
+                        <input id="inputUnder25Noradio"  class="form-check-input" type="radio" name="under25" value="No">
                     </div>
                 </div>
             </div>
@@ -109,25 +110,22 @@
             <div class="row">
                 <div class="col">
                     <div>
-                        <label>Car rental: </label><span id="outputCarRental">xxx</span>
+                        <label>Car rental: </label>
+                        <span id="outputCarRental">xxx</span>
                     </div>
                     <div>
-                        <label>options: </label><span id="outputOptions">xxx</span>
+                        <label>options: </label>
+                        <span id="outputOptions">xxx</span>
                     </div>
                     <div>
-                        <label>Under 25 surcharge: </label><span id="outputSurcharge">xxx</span>
+                        <label>Under 25 surcharge: </label>
+                        <span id="outputSurcharge">xxx</span>
                     </div>
                     <div>
                         <hr>
-                        <label>Total Due </label><span id="outputTotall">xxx</span>
+                        <label>Total Due </label>
+                        <span id="outputTotal">xxx</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <label for="daysInput" class="form-label">Number of Days</label>
-                    <input id="daysInput"  class="form-label" type="text" value="">
                 </div>
             </div>
     </div>
@@ -140,7 +138,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="scripts/site.js"></script>
-    <script src="scripts/index.js"></script>
 </body>
 
 </html>
